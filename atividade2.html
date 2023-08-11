@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="atividade2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE</title>
+</head>
+
+<body>
+    <h1 class="titulo">Verificador de idade</h1>
+    <div class="container">
+        <!DOCTYPE html>
+        <html lang="pt">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Verificador de Idade</title>
+        </head>
+
+
+        <body>
+            <label for="idade">Digite sua idade: </label>
+            <input type="number" id="idade">
+            <button onclick="verificarIdade()">Verificar</button>
+
+            <p id="resultado"></p>
+
+            <script>
+                function verificarIdade() {
+                    var idadeInput = document.getElementById("idade");
+                    var idade = parseInt(idadeInput.value);
+                    if (idade >= 0 && idade < 13) {
+                        document.getElementById('resultado').textContent = ("Você ainda é uma criança!");
+                    } else if (idade >= 13 && idade < 18) {
+                        document.getElementById('resultado').textContent = ("Você ainda  é um adolescente!");
+                    } else if (idade >= 18 && idade < 60) {
+                        document.getElementById('resultado').textContent = ("Você é um adulto, boa sorte!");
+                    } else {
+                        document.getElementById('resultado').textContent = ("Você é um idoso!");
+                    }
+                }
+
+            </script>
+        </body>
+
+        </html>
+
+
+</body>
+
+</html>
